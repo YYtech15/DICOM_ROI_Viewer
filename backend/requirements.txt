@@ -13,15 +13,15 @@ passlib==1.7.4
 # Medical imaging
 pydicom==2.4.3
 nibabel==5.1.0
-numpy==1.25.2
-scipy==1.11.2
-matplotlib==3.7.2
+numpy>=1.26.0  # 更新: Python 3.12との互換性のためにバージョンを上げる
+scipy>=1.11.3  # 更新: Python 3.12との互換性のためにバージョンを上げる 
+matplotlib>=3.8.0  # 更新: Python 3.12との互換性のためにバージョンを上げる
 
 # Image processing
 opencv-python==4.8.0.76
-scikit-image==0.21.0
+scikit-image>=0.22.0  # 更新: Python 3.12との互換性のためにバージョンを上げる
 Pillow==10.0.0
-numba==0.57.1
+numba>=0.58.0  # 更新: Python 3.12との互換性のためにバージョンを上げる
 
 # Testing
 pytest==7.4.0
