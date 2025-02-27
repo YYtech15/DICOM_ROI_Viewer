@@ -11,6 +11,10 @@ class Config:
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(hours=1)
     MAX_CONTENT_LENGTH = 1024 * 1024 * 1024  # 1GB max upload size
     ALLOWED_EXTENSIONS = {'dcm', 'nii', 'nii.gz'}
+    
+    # Redis設定を追加
+    REDIS_URL = os.getenv('REDIS_URL', 'redis://localhost:6379/0')
+    SESSION_TIMEOUT = 3600  # セッションの有効期限（秒）
 
 class DevelopmentConfig(Config):
     """Development config."""

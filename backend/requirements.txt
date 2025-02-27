@@ -22,6 +22,7 @@ opencv-python==4.8.0.76
 scikit-image>=0.22.0  # 更新: Python 3.12との互換性のためにバージョンを上げる
 Pillow==10.0.0
 numba>=0.58.0  # 更新: Python 3.12との互換性のためにバージョンを上げる
+redis==4.5.5
 
 # Testing
 pytest==7.4.0
